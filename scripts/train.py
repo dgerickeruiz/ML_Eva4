@@ -13,6 +13,7 @@ import os
 import wandb
 #from wandb.integration.keras import WandbCallback
 from wandb.integration.keras import WandbMetricsLogger
+import pickle
 
 def load_config(config_path):
     with open(config_path, 'r') as f:
@@ -80,6 +81,10 @@ def main(config_path, model_path, metrics_path):
     }
     with open(metrics_path, 'w') as f:
         json.dump(metrics, f)
+
+    # Guardar tokenizer
+    with open('tokenizer/tokenizer.pkl', 'wb') as f:
+        pickle.dump(tokenizer, f)
 
     # 📌 8. Finalizar wandb
     wandb.finish()
