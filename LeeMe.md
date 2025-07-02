@@ -31,8 +31,13 @@
 # Ejecuta entrenamiento con configuracion "config.yml"
     
     python scripts/train.py --config config/config.yml
-
-    
+  
 # Esta linea ejecuta entrenamieto y guarda el modelo
    
     python scripts/train.py --config config/config.yml --model_path models/lstm_model.h5 --metrics_path models/metrics.json 
+
+# Para exportar el modelo en ONNX
+
+    python exportaModeloOnnx.py
+
+    python -m tf2onnx.convert --saved-model models/saved_model --output models/lstm_model.onnx --opset 13
