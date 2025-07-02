@@ -24,4 +24,8 @@ pip install pandas
 pip install scikit-learn
 pip install matplotlib
 pip install seaborn
+
 pip install tensorflow keras pandas scikit-learn matplotlib seaborn
+
+pip install dvc
+pip install dvc[gs]

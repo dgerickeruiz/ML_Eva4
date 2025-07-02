@@ -17,7 +17,7 @@
 
 # Definir variables de entorno para FireBase
 
-    $Env:GOOGLE_APPLICATION_CREDENTIALS = "dlops_key.json"
+    $Env:GOOGLE_APPLICATION_CREDENTIALS = "ML-Eva4_key.json"
 
 # Ver veriones de tags
 
@@ -25,4 +25,5 @@
 
 # Eliminar carpeta desde PS
 
-    Remove-Item -Path "ML_Eva4" -Recurse -Force  
+    Remove-Item -Path "ML_Eva4" -Recurse -Force
+    Remove-Item -Path "dataset" -Recurse -Force
