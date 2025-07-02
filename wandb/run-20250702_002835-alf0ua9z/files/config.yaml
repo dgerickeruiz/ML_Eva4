@@ -1,0 +1,90 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            1t0qhhnazm8bfhqzcg9vzqwayh18ywtf:
+                args:
+                    - --config
+                    - config/config.yml
+                    - --model_path
+                    - models/lstm_model.h5
+                    - --metrics_path
+                    - models/metrics.json
+                codePath: scripts\train.py
+                codePathLocal: scripts\train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                cudaVersion: "11.6"
+                disk:
+                    /:
+                        total: "500090007552"
+                        used: "374299516928"
+                email: dgerickeruiz@gmail.com
+                executable: D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Scripts\python.exe
+                git:
+                    commit: f2222502560268cbeef98d606eea3c0781f8c866
+                    remote: https://github.com/dgerickeruiz/ML_Eva4.git
+                gpu: NVIDIA GeForce GTX 1650
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 896
+                      memoryTotal: "4294967296"
+                      name: NVIDIA GeForce GTX 1650
+                      uuid: GPU-712c37c9-d649-4f96-f03d-6add9e8565d7
+                host: DanielGericke
+                memory:
+                    total: "16963534848"
+                os: Windows-11-10.0.26100-SP0
+                program: D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\scripts\train.py
+                python: CPython 3.12.5
+                root: D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4
+                startedAt: "2025-07-02T04:28:35.932515Z"
+                writerId: 1t0qhhnazm8bfhqzcg9vzqwayh18ywtf
+        m:
+            - "1": epoch/epoch
+              "6":
+                - 3
+              "7": []
+            - "2": epoch/*
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.12.5
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+                - 105
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+                - 105
+            "3":
+                - 2
+                - 7
+                - 16
+                - 38
+            "4": 3.12.5
+            "5": 0.21.0
+            "8":
+                - 3
+            "12": 0.21.0
+            "13": windows-amd64
+batch_size:
+    value: 32
+embedding_dim:
+    value: 128
+epochs:
+    value: 5
+max_len:
+    value: 100
+max_vocab:
+    value: 10000
+units:
+    value: 64

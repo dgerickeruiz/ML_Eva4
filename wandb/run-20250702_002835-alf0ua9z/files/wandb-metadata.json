@@ -1,0 +1,48 @@
+{
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "CPython 3.12.5",
+  "startedAt": "2025-07-02T04:28:35.932515Z",
+  "args": [
+    "--config",
+    "config/config.yml",
+    "--model_path",
+    "models/lstm_model.h5",
+    "--metrics_path",
+    "models/metrics.json"
+  ],
+  "program": "D:\\INACAP\\2024 Ingenieria\\8vo semestre\\Machine Learning\\Unidad 4\\ML_Eva4\\scripts\\train.py",
+  "codePath": "scripts\\train.py",
+  "codePathLocal": "scripts\\train.py",
+  "git": {
+    "remote": "https://github.com/dgerickeruiz/ML_Eva4.git",
+    "commit": "f2222502560268cbeef98d606eea3c0781f8c866"
+  },
+  "email": "dgerickeruiz@gmail.com",
+  "root": "D:\\INACAP\\2024 Ingenieria\\8vo semestre\\Machine Learning\\Unidad 4\\ML_Eva4",
+  "host": "DanielGericke",
+  "executable": "D:\\INACAP\\2024 Ingenieria\\8vo semestre\\Machine Learning\\Unidad 4\\ML_Eva4\\ML_Eva4\\Scripts\\python.exe",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "500090007552",
+      "used": "374299516928"
+    }
+  },
+  "memory": {
+    "total": "16963534848"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce GTX 1650",
+      "memoryTotal": "4294967296",
+      "cudaCores": 896,
+      "architecture": "Turing",
+      "uuid": "GPU-712c37c9-d649-4f96-f03d-6add9e8565d7"
+    }
+  ],
+  "cudaVersion": "11.6",
+  "writerId": "1t0qhhnazm8bfhqzcg9vzqwayh18ywtf"
+}

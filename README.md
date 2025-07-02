@@ -2,7 +2,7 @@ Aqui irá algo, algún día, tal vez, no lo sé, el futuro es incierto y el tiem
 
 01/07/2025
 
-Contador de errores y frustaciones: IIII
+Contador de errores, frustaciones y lagrimas: IIIII III
 
 Parece que volví jeje
 

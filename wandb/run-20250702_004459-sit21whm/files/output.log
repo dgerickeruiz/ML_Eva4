@@ -1,0 +1,49 @@
+Epoch 1/10
+[1m6824/6824[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m164s[0m 24ms/step - accuracy: 0.6189 - loss: 0.6682 - val_accuracy: 0.0000e+00 - val_loss: 0.9598
+Epoch 2/10
+[1m6824/6824[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m162s[0m 24ms/step - accuracy: 0.6322 - loss: 0.6592 - val_accuracy: 0.0000e+00 - val_loss: 1.0226
+Epoch 3/10
+[1m3353/6824[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m1:30[0m 26ms/step - accuracy: 0.6155 - loss: 0.6674
+Traceback (most recent call last):
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\scripts\train.py", line 99, in <module>
+    main(args.config, args.model_path, args.metrics_path)
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\scripts\train.py", line 61, in main
+    history = model.fit(
+              ^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 377, in fit
+    logs = self.train_function(iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 220, in function
+    opt_outputs = multi_step_on_iterator(iterator)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 833, in __call__
+    result = self._call(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 878, in _call
+    results = tracing_compilation.call_function(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\tensorflow\python\eager\polymorphic_function\tracing_compilation.py", line 139, in call_function
+    return function._call_flat(  # pylint: disable=protected-access
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\tensorflow\python\eager\polymorphic_function\concrete_function.py", line 1322, in _call_flat
+    return self._inference_function.call_preflattened(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\tensorflow\python\eager\polymorphic_function\atomic_function.py", line 216, in call_preflattened
+    flat_outputs = self.call_flat(*args)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\tensorflow\python\eager\polymorphic_function\atomic_function.py", line 251, in call_flat
+    outputs = self._bound_context.call_function(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\tensorflow\python\eager\context.py", line 1688, in call_function
+    outputs = execute.execute(
+              ^^^^^^^^^^^^^^^^
+  File "D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Lib\site-packages\tensorflow\python\eager\execute.py", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

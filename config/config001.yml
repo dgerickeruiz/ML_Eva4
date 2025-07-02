@@ -1,0 +1,6 @@
+max_vocab: 5000
+max_len: 100
+embedding_dim: 64
+units: 64
+epochs: 10
+batch_size: 32

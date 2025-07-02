@@ -9,6 +9,7 @@ import pickle
 import onnxruntime as ort
 import numpy as np
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+import re
 
 # Carga la configuración
 with open('config/config.yml') as f:
@@ -29,11 +30,21 @@ app = FastAPI(title="Sentiment Analysis API")
 class TextRequest(BaseModel):
     text: str
 
+def preprocess_text(text):
+    text = text.lower()
+    text = re.sub(r'[^\w\s]', '', text)
+    text = text.strip()
+    return text
+
 @app.post("/predict/keras")
 def predict_keras(data: TextRequest):
-    seq = tokenizer.texts_to_sequences([data.text])
+    # Preprocesa igual que en el entrenamiento
+    text_clean = preprocess_text(data.text)
+    seq = tokenizer.texts_to_sequences([text_clean])
     padded = pad_sequences(seq, maxlen=config['max_len'], padding='post', truncating='post')
     pred = model_keras.predict(padded)[0][0]
+    print('SEQ:', seq)
+    print('PADDED:', padded)
     return {
         "input": data.text,
         "probability": float(pred),

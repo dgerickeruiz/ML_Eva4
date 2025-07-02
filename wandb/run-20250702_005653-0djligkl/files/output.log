@@ -1,0 +1,21 @@
+Epoch 1/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m14s[0m 44ms/step - accuracy: 0.6236 - loss: 0.6661 - val_accuracy: 0.0000e+00 - val_loss: 0.9782
+Epoch 2/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 41ms/step - accuracy: 0.6213 - loss: 0.6644 - val_accuracy: 0.0000e+00 - val_loss: 0.9099
+Epoch 3/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 41ms/step - accuracy: 0.6350 - loss: 0.6581 - val_accuracy: 0.0000e+00 - val_loss: 0.9140
+Epoch 4/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 42ms/step - accuracy: 0.6248 - loss: 0.6619 - val_accuracy: 0.0000e+00 - val_loss: 1.0251
+Epoch 5/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 41ms/step - accuracy: 0.6202 - loss: 0.6647 - val_accuracy: 0.0000e+00 - val_loss: 0.9652
+Epoch 6/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 43ms/step - accuracy: 0.6243 - loss: 0.6632 - val_accuracy: 0.0000e+00 - val_loss: 0.9787
+Epoch 7/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 42ms/step - accuracy: 0.6255 - loss: 0.6620 - val_accuracy: 0.0000e+00 - val_loss: 0.9929
+Epoch 8/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m10s[0m 45ms/step - accuracy: 0.6288 - loss: 0.6596 - val_accuracy: 0.0000e+00 - val_loss: 0.9583
+Epoch 9/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 41ms/step - accuracy: 0.6240 - loss: 0.6624 - val_accuracy: 0.0000e+00 - val_loss: 0.9509
+Epoch 10/10
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 41ms/step - accuracy: 0.6171 - loss: 0.6664 - val_accuracy: 0.0000e+00 - val_loss: 0.9426
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.

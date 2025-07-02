@@ -1,0 +1,11 @@
+Epoch 1/5
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m11s[0m 40ms/step - accuracy: 0.6204 - loss: 0.6653 - val_accuracy: 0.0000e+00 - val_loss: 0.9528
+Epoch 2/5
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8s[0m 38ms/step - accuracy: 0.6222 - loss: 0.6638 - val_accuracy: 0.0000e+00 - val_loss: 1.0642
+Epoch 3/5
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m8s[0m 38ms/step - accuracy: 0.6297 - loss: 0.6601 - val_accuracy: 0.0000e+00 - val_loss: 0.9441
+Epoch 4/5
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m11s[0m 50ms/step - accuracy: 0.6267 - loss: 0.6614 - val_accuracy: 0.0000e+00 - val_loss: 1.0578
+Epoch 5/5
+[1m214/214[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m9s[0m 43ms/step - accuracy: 0.6246 - loss: 0.6633 - val_accuracy: 0.0000e+00 - val_loss: 0.9741
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.

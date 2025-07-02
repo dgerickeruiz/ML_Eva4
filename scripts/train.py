@@ -36,8 +36,12 @@ def preprocess_data(texts, max_vocab, max_len):
 def build_model(embedding_dim, units, max_vocab, max_len):
     model = keras.Sequential([
         #keras.layers.Embedding(input_dim=max_vocab, output_dim=embedding_dim, input_length=max_len),
-        keras.layers.Embedding(input_dim=max_vocab, output_dim=embedding_dim),
-        keras.layers.LSTM(units),
+        # keras.layers.Embedding(input_dim=max_vocab, output_dim=embedding_dim),
+        # keras.layers.LSTM(units),
+        # keras.layers.Dense(1, activation='sigmoid')
+        keras.layers.Embedding(input_dim=5000, output_dim=64),
+        keras.layers.SpatialDropout1D(0.2),
+        keras.layers.LSTM(64, dropout=0.2, recurrent_dropout=0.2),
         keras.layers.Dense(1, activation='sigmoid')
     ])
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
