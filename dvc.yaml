@@ -4,7 +4,7 @@ stages:
     deps:
       - scripts/train.py
       - config/config.yml
-      - data/sentiment.csv
+      - dataset/dataset_procesado.csv.csv
     outs:
       - models/lstm_model.h5
       - models/metrics.json

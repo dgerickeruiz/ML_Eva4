@@ -1,0 +1,79 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            4fa6h9y46r0zcj4du3j2dkgy96sez7nw:
+                args:
+                    - --config
+                    - config/config.yml
+                codePath: scripts\train.py
+                codePathLocal: scripts\train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                cudaVersion: "11.6"
+                disk:
+                    /:
+                        total: "500090007552"
+                        used: "374005981184"
+                email: dgerickeruiz@gmail.com
+                executable: D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\ML_Eva4\Scripts\python.exe
+                git:
+                    commit: 197c4314bb18638029e319e6eed3bd38e70ae173
+                    remote: https://github.com/dgerickeruiz/ML_Eva4.git
+                gpu: NVIDIA GeForce GTX 1650
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 896
+                      memoryTotal: "4294967296"
+                      name: NVIDIA GeForce GTX 1650
+                      uuid: GPU-712c37c9-d649-4f96-f03d-6add9e8565d7
+                host: DanielGericke
+                memory:
+                    total: "16963534848"
+                os: Windows-11-10.0.26100-SP0
+                program: D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4\scripts\train.py
+                python: CPython 3.12.5
+                root: D:\INACAP\2024 Ingenieria\8vo semestre\Machine Learning\Unidad 4\ML_Eva4
+                startedAt: "2025-07-02T01:36:17.830250Z"
+                writerId: 4fa6h9y46r0zcj4du3j2dkgy96sez7nw
+        m: []
+        python_version: 3.12.5
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+                - 105
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+                - 105
+            "3":
+                - 3
+                - 8
+                - 16
+            "4": 3.12.5
+            "5": 0.21.0
+            "8":
+                - 3
+            "10":
+                - 9
+                - 17
+            "12": 0.21.0
+            "13": windows-amd64
+batch_size:
+    value: 32
+embedding_dim:
+    value: 128
+epochs:
+    value: 5
+max_len:
+    value: 100
+max_vocab:
+    value: 10000
+units:
+    value: 64

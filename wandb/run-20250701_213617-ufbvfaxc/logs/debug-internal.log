@@ -1,0 +1,12 @@
+{"time":"2025-07-01T21:36:18.0980061-04:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-07-01T21:36:18.4519727-04:00","level":"INFO","msg":"stream: created new stream","id":"ufbvfaxc"}
+{"time":"2025-07-01T21:36:18.4519727-04:00","level":"INFO","msg":"stream: started","id":"ufbvfaxc"}
+{"time":"2025-07-01T21:36:18.4519727-04:00","level":"INFO","msg":"handler: started","stream_id":"ufbvfaxc"}
+{"time":"2025-07-01T21:36:18.4519727-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"ufbvfaxc"}
+{"time":"2025-07-01T21:36:18.4519727-04:00","level":"INFO","msg":"sender: started","stream_id":"ufbvfaxc"}
+{"time":"2025-07-01T21:36:21.238356-04:00","level":"INFO","msg":"stream: closing","id":"ufbvfaxc"}
+{"time":"2025-07-01T21:36:22.4426162-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-01T21:36:22.7211735-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ufbvfaxc"}
+{"time":"2025-07-01T21:36:22.7211735-04:00","level":"INFO","msg":"handler: closed","stream_id":"ufbvfaxc"}
+{"time":"2025-07-01T21:36:22.7211735-04:00","level":"INFO","msg":"sender: closed","stream_id":"ufbvfaxc"}
+{"time":"2025-07-01T21:36:22.721784-04:00","level":"INFO","msg":"stream: closed","id":"ufbvfaxc"}

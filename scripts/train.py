@@ -10,6 +10,9 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import json
 import os
+import wandb
+#from wandb.integration.keras import WandbCallback
+from wandb.integration.keras import WandbMetricsLogger
 
 def load_config(config_path):
     with open(config_path, 'r') as f:
@@ -17,7 +20,7 @@ def load_config(config_path):
 
 def load_data():
     # 🚨 Modifica esta parte para que cargue tu dataset real
-    df = pd.read_csv('dataset/dataset_procesado.csv')  # ejemplo de nombre
+    df = pd.read_csv('dataset/dataset_procesado.csv')  # ejemplo
     texts = df['text_procesado'].values
     labels = df['label'].values
     return texts, labels
@@ -31,7 +34,8 @@ def preprocess_data(texts, max_vocab, max_len):
 
 def build_model(embedding_dim, units, max_vocab, max_len):
     model = keras.Sequential([
-        keras.layers.Embedding(input_dim=max_vocab, output_dim=embedding_dim, input_length=max_len),
+        #keras.layers.Embedding(input_dim=max_vocab, output_dim=embedding_dim, input_length=max_len),
+        keras.layers.Embedding(input_dim=max_vocab, output_dim=embedding_dim),
         keras.layers.LSTM(units),
         keras.layers.Dense(1, activation='sigmoid')
     ])
@@ -42,27 +46,32 @@ def main(config_path, model_path, metrics_path):
     # 📌 1. Cargar configuración
     config = load_config(config_path)
 
-    # 📌 2. Cargar y preprocesar datos
+    # 📌 2. Iniciar wandb
+    wandb.init(project="ML_Eva4", entity="dgerickeruiz24", config=config)
+
+    # 📌 3. Cargar y preprocesar datos
     texts, labels = load_data()
     padded, tokenizer = preprocess_data(texts, config['max_vocab'], config['max_len'])
 
-    # 📌 3. Construir modelo
+    # 📌 4. Construir modelo
     model = build_model(config['embedding_dim'], config['units'], config['max_vocab'], config['max_len'])
 
-    # 📌 4. Entrenar modelo
+    # 📌 5. Entrenar modelo con callback de wandb
     history = model.fit(
         padded,
         labels,
         epochs=config['epochs'],
         batch_size=config['batch_size'],
-        validation_split=0.2
+        validation_split=0.2,
+        #callbacks=[WandbCallback()]
+        callbacks=[WandbMetricsLogger()]
     )
 
-    # 📌 5. Guardar modelo entrenado
+    # 📌 6. Guardar modelo entrenado
     os.makedirs(os.path.dirname(model_path), exist_ok=True)
     model.save(model_path)
 
-    # 📌 6. Guardar métricas
+    # 📌 7. Guardar métricas finales
     metrics = {
         'loss': history.history['loss'][-1],
         'accuracy': history.history['accuracy'][-1],
@@ -71,6 +80,9 @@ def main(config_path, model_path, metrics_path):
     }
     with open(metrics_path, 'w') as f:
         json.dump(metrics, f)
+
+    # 📌 8. Finalizar wandb
+    wandb.finish()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

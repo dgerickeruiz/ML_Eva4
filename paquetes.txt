@@ -31,3 +31,5 @@ pip install dvc
 pip install dvc[gs]
 
 pip install tensorflow pyyaml pandas
+
+pip install wandb
