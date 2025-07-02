@@ -1,0 +1,10 @@
+stages:
+  train:
+    cmd: python scripts/train.py --config config/config.yml --model_path models/lstm_model.h5 --metrics_path models/metrics.json
+    deps:
+      - scripts/train.py
+      - config/config.yml
+      - data/sentiment.csv
+    outs:
+      - models/lstm_model.h5
+      - models/metrics.json

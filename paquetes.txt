@@ -29,3 +29,5 @@ pip install tensorflow keras pandas scikit-learn matplotlib seaborn
 
 pip install dvc
 pip install dvc[gs]
+
+pip install tensorflow pyyaml pandas

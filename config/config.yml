@@ -1,0 +1,6 @@
+embedding_dim: 128
+units: 64
+batch_size: 32
+epochs: 5
+max_vocab: 10000
+max_len: 100
