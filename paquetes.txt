@@ -33,3 +33,8 @@ pip install dvc[gs]
 pip install tensorflow pyyaml pandas
 
 pip install wandb
+pip install --upgrade wandb
+
+pip install keras2onnx onnx
+pip install tf2onnx
+pip install "numpy<2.0"

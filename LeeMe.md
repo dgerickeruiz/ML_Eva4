@@ -27,3 +27,9 @@
 
     Remove-Item -Path "ML_Eva4" -Recurse -Force
     Remove-Item -Path "dataset" -Recurse -Force
+
+# Ejecuta entrenamiento con configuracion "config.yml"
+    python scripts/train.py --config config/config.yml
+
+    Esta linea guarda el modelo
+    python scripts/train.py --config config/config.yml --model_path models/lstm_model.h5 --metrics_path models/metrics.json 
